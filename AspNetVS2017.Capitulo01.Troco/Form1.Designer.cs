@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
             ""}, 0, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem(new string[] {
             ""}, 1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem(new string[] {
             ""}, 2, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem(new string[] {
             ""}, 3, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem(new string[] {
             ""}, 4, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem(new string[] {
             ""}, 5, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.valorTrocoTextBox = new System.Windows.Forms.TextBox();
+            this.trocoTextBox = new System.Windows.Forms.TextBox();
             this.valorPagoTextBox = new System.Windows.Forms.TextBox();
             this.valorCompraTextBox = new System.Windows.Forms.TextBox();
             this.calculaButton = new System.Windows.Forms.Button();
@@ -61,7 +61,7 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox1.Controls.Add(this.valorTrocoTextBox);
+            this.groupBox1.Controls.Add(this.trocoTextBox);
             this.groupBox1.Controls.Add(this.valorPagoTextBox);
             this.groupBox1.Controls.Add(this.valorCompraTextBox);
             this.groupBox1.Controls.Add(this.calculaButton);
@@ -70,19 +70,18 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(258, 426);
+            this.groupBox1.Size = new System.Drawing.Size(258, 468);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Valores";
             // 
-            // valorTrocoTextBox
+            // trocoTextBox
             // 
-            this.valorTrocoTextBox.Location = new System.Drawing.Point(93, 84);
-            this.valorTrocoTextBox.Name = "valorTrocoTextBox";
-            this.valorTrocoTextBox.ReadOnly = true;
-            this.valorTrocoTextBox.Size = new System.Drawing.Size(145, 20);
-            this.valorTrocoTextBox.TabIndex = 1;
-            this.valorTrocoTextBox.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.trocoTextBox.Location = new System.Drawing.Point(93, 84);
+            this.trocoTextBox.Name = "trocoTextBox";
+            this.trocoTextBox.ReadOnly = true;
+            this.trocoTextBox.Size = new System.Drawing.Size(145, 20);
+            this.trocoTextBox.TabIndex = 1;
             // 
             // valorPagoTextBox
             // 
@@ -116,7 +115,6 @@
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 1;
             this.label3.Text = "Troco:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -126,7 +124,6 @@
             this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Valor pago:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -136,7 +133,6 @@
             this.label1.Size = new System.Drawing.Size(87, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Valor da compra:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBox2
             // 
@@ -146,7 +142,7 @@
             this.groupBox2.Controls.Add(this.moedasListView);
             this.groupBox2.Location = new System.Drawing.Point(287, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(528, 426);
+            this.groupBox2.Size = new System.Drawing.Size(620, 468);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Troco";
@@ -155,16 +151,16 @@
             // 
             this.moedasListView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.moedasListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3,
-            listViewItem4,
-            listViewItem5,
-            listViewItem6});
+            listViewItem7,
+            listViewItem8,
+            listViewItem9,
+            listViewItem10,
+            listViewItem11,
+            listViewItem12});
             this.moedasListView.LargeImageList = this.moedasImageList;
             this.moedasListView.Location = new System.Drawing.Point(3, 16);
             this.moedasListView.Name = "moedasListView";
-            this.moedasListView.Size = new System.Drawing.Size(522, 407);
+            this.moedasListView.Size = new System.Drawing.Size(614, 449);
             this.moedasListView.TabIndex = 2;
             this.moedasListView.UseCompatibleStateImageBehavior = false;
             // 
@@ -183,13 +179,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(827, 450);
+            this.ClientSize = new System.Drawing.Size(919, 492);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Troco";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -204,7 +199,7 @@
         private System.Windows.Forms.Button calculaButton;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox valorTrocoTextBox;
+        private System.Windows.Forms.TextBox trocoTextBox;
         private System.Windows.Forms.TextBox valorPagoTextBox;
         private System.Windows.Forms.TextBox valorCompraTextBox;
         private System.Windows.Forms.GroupBox groupBox2;
